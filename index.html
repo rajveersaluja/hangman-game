@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="lost.gif" alt="">
+            <h4>Game Over!</h4>
+            <p>The Correct Word Was : <b>Rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="game-box">
+      <div class="hangman">
+        <img src="hangman-0.svg" alt="hangman" />
+        <h1>HangMan Game</h1>
+      </div>
+      <div class="game">
+        <div class="letter-box">
+          <ul id="wordDisplay">
+          </ul>
+        </div>
+        <div class="hint">
+          
+            <h5>Hint: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, vero?</span></h5>
+         
+        </div>
+        <div class="incorrect-guess">
+          <p>Incorrect guesses : <span id="wrongCount">0/6</span></p>
+        </div>
+
+        <div class="keyboard">
+         
+        </div>
+      </div>
+    </div>
+
+    <script src="wrodlist.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

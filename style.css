@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-box{
+    background-color: white;
+    width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 70px;
+    padding: 60px 40px;
+    align-items: flex-end;
+}
+.hangman {
+    max-width: 270px;
+}
+.hangman h1{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.letter-box ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+    justify-content: center;
+}
+.letter-box li{
+    width: 28px;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hint{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.incorrect-guess{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.incorrect-guess span{
+        color: red;
+}
+.keyboard{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 5px;
+}
+.keyboard button{
+    width: calc(100% / 9 - 5px);
+    padding: 5px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.game-modal{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.game-modal.show{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+
+.game-modal .content{
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+.content p b{
+    color: aqua;
+}
+.game-modal img{
+    width: 150px;
+
+}
+.game-modal button{
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
